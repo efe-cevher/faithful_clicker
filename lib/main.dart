@@ -9,7 +9,6 @@ import 'package:flutter/services.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -242,14 +241,13 @@ class _MyHomePageState extends State<MyHomePage> {
             tiles: tiles,
           ).toList();
           return Scaffold(
-            // Add 6 lines from here...
             appBar: AppBar(
               title: Text('Scoreboard'),
             ),
             body: ListView(children: divided),
-          ); // ... to here.
+          );
         },
-      ), // ... to here.
+      ),
     );
   }
 
